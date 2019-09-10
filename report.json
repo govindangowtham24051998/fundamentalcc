@@ -1,0 +1,147 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User Login with valid Credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13061983900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User in Homepage",
+            "match": {
+              "location": "productpurchase.user_in_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4731579900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters Username and Password and click on Login Button",
+            "match": {
+              "location": "productpurchase.user_enters_Username_and_Password_and_click_on_Login_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9142200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Logged verified",
+            "match": {
+              "location": "productpurchase.user_Logged_verified()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-10T08:49:54.995Z",
+        "line": 12,
+        "name": "Successfull checkout",
+        "description": "",
+        "id": "end-to-end-product-purchase;successfull-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 842296700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Searches for Electronics,Headphone",
+            "match": {
+              "location": "productpurchase.user_searches_for_Electronics_Headphone()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 813512300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User add the product to the Shopping cart",
+            "match": {
+              "location": "productpurchase.user_add_the_product_to_the_Shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Sign Ou]t\u003e but was:\u003c[View Car]t\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat prodlin.productpurchase.user_proceeds_for_checkout(productpurchase.java:93)\r\n\tat ✽.User proceeds for checkout(classpath:prodlin/linda.feature:15)\r\n",
+              "duration": 14945200,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User proceeds for checkout",
+            "match": {
+              "location": "productpurchase.user_proceeds_for_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45200,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Select bank and Add Credentials",
+            "match": {
+              "location": "productpurchase.select_bank_and_Add_Credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23600,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User directed to Thankyou Page",
+            "match": {
+              "location": "productpurchase.user_directed_to_Thankyou_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "End to End Product purchase",
+    "description": "   This shows the Linda purchase for product",
+    "id": "end-to-end-product-purchase",
+    "keyword": "Feature",
+    "uri": "classpath:prodlin/linda.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
